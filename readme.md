@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/ttnppedr/Gilded-Rose-Kata-in-PHP.svg?branch=master)](https://travis-ci.com/ttnppedr/Gilded-Rose-Kata-in-PHP)
+
 # The Gilded Rose Kata
 
 ## Setup
