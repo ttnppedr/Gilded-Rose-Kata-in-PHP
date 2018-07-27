@@ -1,6 +1,7 @@
 {
     "require-dev": {
-        "crysalead/kahlan": "^1.2"
+        "crysalead/kahlan": "^1.2",
+        "phpunit/phpunit": "^7.2"
     },
     "autoload": {
         "psr-4": {
