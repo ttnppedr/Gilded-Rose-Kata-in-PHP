@@ -1,8 +1,9 @@
 language: php
 php:
-  - 7.1.9
-
+- 7.1.9
 install:
-  - composer install --prefer-dist --no-dev --optimize-autoloader --quiet
-
+- composer install --prefer-dist --optimize-autoloader --quiet
 script: phpunit -c phpunit.xml
+notifications:
+  slack:
+    secure: fSRV6zyiWNFe6hV0ft21l5Kcl7GU+O/mPnsuGxwWfKOxHz/RVwJde+da+e4Pt7nE3I4ERx0IlZGwNjUvm7Gw3UDI6z+mP1XPHi+PFxAiGKX89lRkMO3lXzqD+aQ5MEAfPvx4x9YhOvH8Ff1sGnDngC9eklHpV8g21W8D11H5Vbx8srTdli1iSMzoRw2a+5juIFQeYRf4bJN/KSA80nDpcDrCr4GC2VFm/I/+EyR8A1YaUQZhMDd9fNyFeTcW5vnJEcziC1kofOtF+sug+09soZn7M9KCrFJDn4MQpgdo8F6M9leIIg4tBte6NCUBs2PDHAd3yo/fn/2oRCqnPwkuLe7MB9mb07+rfHXIiW0nL+h3WJ/QDQGsCa5khD9ssu9mACYRrE597cCqNLhER+2hv8A/RqssF0rRd/IMZb0gHcqBZMasQL7jiBL4QQDNmtIJJg85SsTcRbsI0g1Fu6HxwfYkXCDL2lSxntyKayR3/u6zrxZrJZ4rH7YMXP44U960mqVeADs0XHB33Ak5e84NgOdIbVwSDK5rP4e3GaYVHXJ8TuVo2ieT5hukBMp/Er7uz7VuhVUa0Iw7FhaCvCpuLk8CTfmV7U7mF9G372lqRFltme2+AorAWciJicCfBs+RIbwNmbWKW3cn4dIq+JX3ww+mSuWpprs94cASp2nkzhY=
