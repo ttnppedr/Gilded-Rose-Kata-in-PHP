@@ -23,16 +23,13 @@ class GildedRose
 
     public function tick()
     {
-        if ($this->name == 'normal') {
-            return $this->normalTick();
-        }
-
-        if ($this->name == 'Aged Brie') {
-            return $this->brieTick();
-        }
-
-        if ($this->name == 'Sulfuras, Hand of Ragnaros') {
-            return $this->sulfurasTick();
+        switch ($this->name) {
+            case 'normal':
+                return $this->normalTick();
+            case 'Aged Brie':
+                return $this->brieTick();
+            case 'Sulfuras, Hand of Ragnaros':
+                return $this->sulfurasTick();
         }
 
         if ($this->name != 'Aged Brie' and $this->name != 'Backstage passes to a TAFKAL80ETC concert') {
