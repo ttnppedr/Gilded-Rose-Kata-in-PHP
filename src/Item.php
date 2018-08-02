@@ -2,7 +2,7 @@
 
 namespace App;
 
-abstract class Item
+class Item
 {
     public $quality;
     public $sellIn;
@@ -13,5 +13,7 @@ abstract class Item
         $this->sellIn = $sellIn;
     }
 
-    abstract public function tick();
+    public function tick()
+    {
+    }
 }
