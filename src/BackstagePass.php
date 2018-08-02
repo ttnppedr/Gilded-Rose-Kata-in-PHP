@@ -2,17 +2,8 @@
 
 namespace App;
 
-class BackstagePass
+class BackstagePass extends Item
 {
-    public $quality;
-    public $sellIn;
-
-    public function __construct($quality, $sellIn)
-    {
-        $this->quality = $quality;
-        $this->sellIn = $sellIn;
-    }
-
     public function tick()
     {
         $this->sellIn -= 1;
