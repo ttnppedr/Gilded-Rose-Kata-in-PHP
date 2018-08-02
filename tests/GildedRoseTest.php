@@ -317,87 +317,87 @@ class GildedRoseTest extends TestCase
         $this->assertEquals(-2, $item->sellIn);
     }
 
-    // /**
-    //  * @test
-    //  * @group Conjured
-    //  */
-    // public function updates_Conjured_items_before_the_sell_date()
-    // {
-    //     $item = GildedRose::of('Conjured Mana Cake', 10, 10);
+    /**
+     * @test
+     * @group Conjured
+     */
+    public function updates_Conjured_items_before_the_sell_date()
+    {
+        $item = GildedRose::of('Conjured Mana Cake', 10, 10);
 
-    //     $item->tick();
+        $item->tick();
 
-    //     $this->assertEquals(8, $item->quality);
-    //     $this->assertEquals(9, $item->sellIn);
-    // }
+        $this->assertEquals(8, $item->quality);
+        $this->assertEquals(9, $item->sellIn);
+    }
 
-    // /**
-    //  * @test
-    //  * @group Conjured
-    //  */
-    // public function updates_Conjured_items_at_zero_quality()
-    // {
-    //     $item = GildedRose::of('Conjured Mana Cake', 0, 10);
+    /**
+     * @test
+     * @group Conjured
+     */
+    public function updates_Conjured_items_at_zero_quality()
+    {
+        $item = GildedRose::of('Conjured Mana Cake', 0, 10);
 
-    //     $item->tick();
+        $item->tick();
 
-    //     $this->assertEquals(0, $item->quality);
-    //     $this->assertEquals(9, $item->sellIn);
-    // }
+        $this->assertEquals(0, $item->quality);
+        $this->assertEquals(9, $item->sellIn);
+    }
 
-    // /**
-    //  * @test
-    //  * @group Conjured
-    //  */
-    // public function updates_Conjured_items_on_the_sell_date()
-    // {
-    //     $item = GildedRose::of('Conjured Mana Cake', 10, 0);
+    /**
+     * @test
+     * @group Conjured
+     */
+    public function updates_Conjured_items_on_the_sell_date()
+    {
+        $item = GildedRose::of('Conjured Mana Cake', 10, 0);
 
-    //     $item->tick();
+        $item->tick();
 
-    //     $this->assertEquals(6, $item->quality);
-    //     $this->assertEquals(-1, $item->sellIn);
-    // }
+        $this->assertEquals(6, $item->quality);
+        $this->assertEquals(-1, $item->sellIn);
+    }
 
-    // /**
-    //  * @test
-    //  * @group Conjured
-    //  */
-    // public function updates_Conjured_items_on_the_sell_date_at_0_quality()
-    // {
-    //     $item = GildedRose::of('Conjured Mana Cake', 0, 0);
+    /**
+     * @test
+     * @group Conjured
+     */
+    public function updates_Conjured_items_on_the_sell_date_at_0_quality()
+    {
+        $item = GildedRose::of('Conjured Mana Cake', 0, 0);
 
-    //     $item->tick();
+        $item->tick();
 
-    //     $this->assertEquals(0, $item->quality);
-    //     $this->assertEquals(-1, $item->sellIn);
-    // }
+        $this->assertEquals(0, $item->quality);
+        $this->assertEquals(-1, $item->sellIn);
+    }
 
-    // /**
-    //  * @test
-    //  * @group Conjured
-    //  */
-    // public function updates_Conjured_items_after_the_sell_date()
-    // {
-    //     $item = GildedRose::of('Conjured Mana Cake', 10, -10);
+    /**
+     * @test
+     * @group Conjured
+     */
+    public function updates_Conjured_items_after_the_sell_date()
+    {
+        $item = GildedRose::of('Conjured Mana Cake', 10, -10);
 
-    //     $item->tick();
+        $item->tick();
 
-    //     $this->assertEquals(6, $item->quality);
-    //     $this->assertEquals(-11, $item->sellIn);
-    // }
+        $this->assertEquals(6, $item->quality);
+        $this->assertEquals(-11, $item->sellIn);
+    }
 
-    // /**
-    //  * @test
-    //  * @group Conjured
-    //  */
-    // public function updates_Conjured_items_after_the_sell_date_at_zero_quality()
-    // {
-    //     $item = GildedRose::of('Conjured Mana Cake', 0, -10);
+    /**
+     * @test
+     * @group Conjured
+     */
+    public function updates_Conjured_items_after_the_sell_date_at_zero_quality()
+    {
+        $item = GildedRose::of('Conjured Mana Cake', 0, -10);
 
-    //     $item->tick();
+        $item->tick();
 
-    //     $this->assertEquals(0, $item->quality);
-    //     $this->assertEquals(-11, $item->sellIn);
-    // }
+        $this->assertEquals(0, $item->quality);
+        $this->assertEquals(-11, $item->sellIn);
+    }
 }
